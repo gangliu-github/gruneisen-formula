@@ -1,0 +1,12 @@
+This code can help you calculate linear thermal expansion coefficients (LTECs) with Gruneisen theory. It needs phonon spectra for only several volumes, and can applied to 2D/3D, anisotropic/isotropic materials.
+It is based on Python 2.7.  
+(1) Apply strains on your material, optimize the atoms' positions.
+(2) Calculate phonon spectra in the Brillouin zone with phonopy. Note the Gamma point should be avoided. The mesh.yaml file will be used for subsequent calculations.
+(3) Calculate the elastic constants of equilibrium volume.
+(4) Edite the input parameters in grun_tec.in file.
+(5) Run the code by typing: python grun_tec.py.
+(6) The results are in LTEC.dat file.
+There is an example for graphite.
+Hopefully you can cite the following papers, if you find this code useful. Many thanks! (^.^)
+Gang Liu, Jian Zhou and Hui Wang, Phys.Chem.Chem.Phys., 2017, 19, 15187
+Gang Liu and Jian Zhou, J. Phys.: Condens. Matter, 2019, 31, 065302
